@@ -18,3 +18,15 @@
 | 3   | 5   | 12     |
 | 3   | 3   | 3      |
 | 5   | 3   | 12     |
+
+## 🔥 내 풀이
+
+```python
+def solution(a, b):
+    if a <= b:
+        answer = sum(range(a, b+1))
+    else:
+        answer = sum(range(b, a+1))
+
+    return answer
+```

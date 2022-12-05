@@ -14,3 +14,19 @@
 | n     | return      |
 | ----- | ----------- |
 | 12345 | [5,4,3,2,1] |
+
+## 🔥 내 풀이
+
+나는 숫자를 배열로 만들어주기 위한 첫 번째 단계로 str() 함수를 이용해 string 문자열로 만들었다.  
+그 다음 단계로 list() 함수를 이용해 해당 문자열을 ["1", "2", "3", "4", "5"] 배열로 만들었다.  
+return 값으로는 해당 수를 뒤집어서 return 해야 했기에 만들어준 배열을 reverse() 함수를 사용해 뒤집어주었다.
+
+마지막으로 문자 배열을 숫자 배열로 다시 변경 해야했기에 map을 통해 숫자열로 변경해준 후, list()를 사용해 다시 배열로 만들어주면 원하는 return 값을 얻을 수 있었다.
+
+```python
+def solution(n):
+  answer = list(str(n))
+  answer.reverse()
+  answer = list(map(int, answer))
+  return answer
+```

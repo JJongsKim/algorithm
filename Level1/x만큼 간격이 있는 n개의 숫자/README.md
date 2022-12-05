@@ -17,3 +17,19 @@
 | 2   | 5   | [2,4,6,8,10] |
 | 4   | 3   | [4,8,12]     |
 | -4  | 3   | [-4,-8]      |
+
+## 🔥 내 풀이
+
+```python
+def solution(x, n):
+  origin_num = x;
+  answer = [0 for i in range(n)] # 자연수 n 길이만큼 가지는 배열 answer을 만들어준다.
+  answer[0] = x # 배열 answer 첫 번째 원소값을 정수 x로 넣어준다.
+
+  for i in range(n):
+    if i + 1 < n: # 반복문을 n - 1 만큼 반복하기 위해 넣은 조건문 왜냐하면 이미 첫 번째 원소값을 내가 넣었으니까.
+      x += origin_num # 주어진 정수 x씩 증가할 수 있도록 함
+      answer[i + 1] = x # 배열 answer 두 번째 원소부터 계속 더해지는 x값으로 넣어줌
+
+  return answer
+```

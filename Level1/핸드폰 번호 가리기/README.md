@@ -15,3 +15,17 @@
 | ------------- | ---------------- |
 | "01033334444" | "**\*\*\***4444" |
 | "027778888"   | "**\***8888"     |
+
+## 🔥 내 풀이
+
+전화번호 길이의 변화가 있더라도 전화번호 끝 4자리는 변함이 없기 때문에 이를 이용했다.  
+len(phone_number) - 4를 이용해 가려야하는 앞자리 문자열을 변수에 담아준다.  
+그 다음 phone_number의 문자열을 변경하기 위해 replace() 함수를 이용해 가려야하는 숫자를 \*로 변경해주었다.
+
+```python
+def solution(phone_number):
+  text = phone_number[:len(phone_number)-4] # 가려야하는 문자열을 담을 text 변수 만들기
+  answer = phone_number.replace(text, "*"*len(text)) # 원래 문자열에 replace 적용, 가려야하는 문자열인 text를 적용해준다.
+
+  return answer
+```

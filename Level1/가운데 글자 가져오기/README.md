@@ -15,3 +15,22 @@
 | ------- | ------ |
 | "abcde" | "c"    |
 | "qwer"  | "we"   |
+
+## 🔥 내 풀이
+
+입출력 예시를 보고 난 후, 규칙을 먼저 파악했다.
+
+- 짝수 : 가운데 두 글자
+- 홀수 : 맨 가운데 한 글자 (글자수를 2로 나누어 나온 값을 해당 문자열의 인덱스로 넣어주면 된다!)
+
+```python
+def solution(s):
+  slice_num = (len(s) // 2) # 받아온 글자의 글자수 구하고 2로 나누어 정수의 몫으로 구하기
+
+  if (len(s) % 2 == 0): # 글
+    answer = s[slice_num-1:slice_num+1]
+  else:
+    answer = s[slice_num]
+
+  return answer
+```

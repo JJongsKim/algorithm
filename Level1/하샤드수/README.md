@@ -32,3 +32,32 @@
 
 **입출력 예 #4**  
 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.
+
+## 🔥 내 풀이
+
+[정수 내림차순으로 배치하기](https://github.com/JJongsKim/algorithm/tree/main/Level1/%EC%A0%95%EC%88%98%20%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0)  
+하샤드 수 문제는 위 문제를 응용하여 풀어보았다.
+
+들어온 숫자의 자릿수를 더하기 위해선 숫자 배열이 필요했다. 숫자 배열을 만들기 위해 아래와 같은 과정을 거쳤다.
+
+- 우선 들어온 숫자를 문자열로 바꾸고, 문자열 배열로 만들어준다.
+- 다시 문자열 배열을 list와 map int를 활용해 숫자 배열로 만들어준다.
+
+숫자 배열을 이용해 for문을 돌리고 자릿수끼리 더한 변수를 하나 만들어준다.  
+그리고 함수에 들어온 숫자 x를 해당 변수로 나누어주고 나누어 떨어질 시 하샤드 수임을 알아낼 수 있었다.
+
+```python
+def solution(x):
+  num_sum = 0
+
+  ex = list(str(x))
+  ex = list(map(int, ex))
+
+  for i in range(len(ex)):
+    num_sum += ex[i]
+
+  if (x % num_sum == 0):
+    return True
+  else:
+    return False
+```

@@ -54,7 +54,8 @@ def solution(n, lost, reserve): # 전체 학생의 수, 도난 당한 학생 번
     return answer
 ```
 
-라고 코드 풀이를 짰으나 몇몇의 테스트 케이스에서 막힌 것을 확인할 수 있었다..
+라고 코드 풀이를 짰으나 몇몇의 테스트 케이스에서 막힌 것을 확인할 수 있었다..  
+<img width="409" alt="스크린샷 2022-12-05 오전 11 45 15" src="https://user-images.githubusercontent.com/81777778/205554890-c3d811e5-0da4-4a96-a2dc-f35de797cf99.png">
 
 원인은 문제에서 알려준
 

@@ -6,3 +6,4 @@
 ## 💻 프로그래머스 기록장
 ### Contents
 - [LEVEL1](https://github.com/JJongsKim/algorithm/tree/main/Level1)
+- [LEVEL2](https://github.com/JJongsKim/algorithm/tree/main/LEVEL2)

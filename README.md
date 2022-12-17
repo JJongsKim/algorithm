@@ -1,5 +1,6 @@
 ## 💻 백준 기록장
 ### Contents
+- [BOJ](https://github.com/JJongsKim/algorithm/tree/main/BOJ)
 
 <br />
 
